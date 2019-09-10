@@ -49,7 +49,7 @@ public class QueryReports {
    	         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
    	         
    	         login(sheet.getRow(1).getCell(1).getStringCellValue(), sheet.getRow(2).getCell(1).getStringCellValue(), driver);
-   	         System.out.println("Number of Reports  in File: " +(sheet.getLastRowNum()-3));
+   	         System.out.println("Number of Reports in File: " +(sheet.getLastRowNum()-3));
    	      for(int j = 4; j<=sheet.getLastRowNum(); j++)  
    	      {
    	    	String navigation1 = sheet.getRow(j).getCell(1).getStringCellValue();    	
